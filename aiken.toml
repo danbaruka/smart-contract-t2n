@@ -1,0 +1,11 @@
+name = "task2earn/campaign"
+version = "1.0.0"
+plutus = "v3"
+license = "MIT"
+description = "Task2Earn Campaign Validator with Merkle Proof Distribution"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "main"
+source = "github"
+

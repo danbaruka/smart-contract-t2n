@@ -1,0 +1,17 @@
+{
+  "contractName": "Task2Earn Campaign Validator",
+  "version": "1.0.0",
+  "implementation": "TypeScript/Plu-ts",
+  "compiledAt": "2025-10-26T14:30:40.094Z",
+  "note": "This is a TypeScript implementation demonstrating the contract logic.",
+  "recommendation": "For production deployment, consider using Aiken for better tooling and developer experience.",
+  "features": [
+    "Merkle-proof reward distribution",
+    "Multi-asset support (ADA & native tokens)",
+    "Automatic fee collection",
+    "API credit management",
+    "Campaign lifecycle (Active/Paused/Ended/Cancelled)",
+    "Flexible completion modes",
+    "Cancellation with penalty"
+  ]
+}

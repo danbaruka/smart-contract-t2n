@@ -1,0 +1,153 @@
+{
+  "preamble": {
+    "title": "task2earn/campaign",
+    "description": "Task2Earn Campaign Validator with Merkle Proof Distribution",
+    "version": "1.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.19+e525483"
+    },
+    "license": "MIT"
+  },
+  "validators": [
+    {
+      "title": "campaign.campaign.spend",
+      "datum": {
+        "title": "datum_opt",
+        "schema": {
+          "$ref": "#/definitions/campaign~1CampaignDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/campaign~1CampaignRedeemer"
+        }
+      },
+      "compiledCode": "5903e701010029800aba2aba1aab9faab9eaab9dab9a48888896600264653001300700198039804000cdc3a400530070024888966002600460106ea800e3300130093754007370e90024dc3a40013008375400891111919912cc004c014012264b300130140018992cc004c01cc044dd5000c4c8ca60026eb4c058006602e003375c602c0049112cc004c06800a264660020026eb0c06800c896600200300b89919801801980e8011bae301b0014069164060301600130123754003164040602600316404860206ea802e2b300130090048acc004c040dd5005c00a2c808a2b300130060048acc004c040dd5005c00a2c808a2b30013370e9003002456600260206ea802e00516404515980099b87480200122b3001301037540170028b20228b201c4038807100e201c159800980198069baa0018cc004c040c038dd5000c88c8cc00400400c896600200314a115980099b8f375c602800200714a313300200230150014040809a4602260246024602460246024602460246024003230113012301230123012301200198069baa00948888966002601000319800980a98099baa00e9180b180b800c8c058c05cc05c00644646600200200644b30010018a508acc004c00cc0640062946266004004603400280a901824444b3001323371e64660020026eb0c010c064dd5003112cc0040062007133225980099baf5980099b900010028a60103d87980008acc004cdc78008014530103d87a80008a6103d87b8000406880d1300103d879800089b94337140020051372866e2800800501a1bae301c00133002002301d001406c6eb8c010c060dd50051b94337146eb8c064c05cdd50021bb330033017375400915980098069bad30063017375401315980099b89375a6006602e6ea8010cdc09bad3002301737540126eb4c064c068c068c068c05cdd5004c566002660026eb0c008c05cdd50079192cc004c038c060dd5000c4cdc79bae301b301937540026eb8c06cc064dd50034528202e301a30183754603460306ea80062660026eb0c008c05cdd500792cc004c044c05cdd5180d180c1baa301a3018375400314a314a080b229410154528202a8a50405514a080a91598009806000c4cc010dd6180198099baa00b375c602a60266ea80162b300130090018acc004cc010dd6180198099baa00b375c602a60266ea8016260106eb4c008c04cdd5002c52820228acc004cdc3a400c003159800998021bac3003301337540166eb8c054c04cdd5002c4c020dd6980118099baa0058a504045159800998021bac3003301337540166eb8c054c04cdd5002c4c030dd6980118099baa0058a5040448089011202240448b20183010005300f30100044590070c01c004c00cdd5003c52689b2b20021",
+      "hash": "7dd47d14938e84cedaa2369638450a7992a7d594d54f6d6af32c1a2c"
+    },
+    {
+      "title": "campaign.campaign.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5903e701010029800aba2aba1aab9faab9eaab9dab9a48888896600264653001300700198039804000cdc3a400530070024888966002600460106ea800e3300130093754007370e90024dc3a40013008375400891111919912cc004c014012264b300130140018992cc004c01cc044dd5000c4c8ca60026eb4c058006602e003375c602c0049112cc004c06800a264660020026eb0c06800c896600200300b89919801801980e8011bae301b0014069164060301600130123754003164040602600316404860206ea802e2b300130090048acc004c040dd5005c00a2c808a2b300130060048acc004c040dd5005c00a2c808a2b30013370e9003002456600260206ea802e00516404515980099b87480200122b3001301037540170028b20228b201c4038807100e201c159800980198069baa0018cc004c040c038dd5000c88c8cc00400400c896600200314a115980099b8f375c602800200714a313300200230150014040809a4602260246024602460246024602460246024003230113012301230123012301200198069baa00948888966002601000319800980a98099baa00e9180b180b800c8c058c05cc05c00644646600200200644b30010018a508acc004c00cc0640062946266004004603400280a901824444b3001323371e64660020026eb0c010c064dd5003112cc0040062007133225980099baf5980099b900010028a60103d87980008acc004cdc78008014530103d87a80008a6103d87b8000406880d1300103d879800089b94337140020051372866e2800800501a1bae301c00133002002301d001406c6eb8c010c060dd50051b94337146eb8c064c05cdd50021bb330033017375400915980098069bad30063017375401315980099b89375a6006602e6ea8010cdc09bad3002301737540126eb4c064c068c068c068c05cdd5004c566002660026eb0c008c05cdd50079192cc004c038c060dd5000c4cdc79bae301b301937540026eb8c06cc064dd50034528202e301a30183754603460306ea80062660026eb0c008c05cdd500792cc004c044c05cdd5180d180c1baa301a3018375400314a314a080b229410154528202a8a50405514a080a91598009806000c4cc010dd6180198099baa00b375c602a60266ea80162b300130090018acc004cc010dd6180198099baa00b375c602a60266ea8016260106eb4c008c04cdd5002c52820228acc004cdc3a400c003159800998021bac3003301337540166eb8c054c04cdd5002c4c020dd6980118099baa0058a504045159800998021bac3003301337540166eb8c054c04cdd5002c4c030dd6980118099baa0058a5040448089011202240448b20183010005300f30100044590070c01c004c00cdd5003c52689b2b20021",
+      "hash": "7dd47d14938e84cedaa2369638450a7992a7d594d54f6d6af32c1a2c"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "List$ByteArray": {
+      "dataType": "list",
+      "items": {
+        "$ref": "#/definitions/ByteArray"
+      }
+    },
+    "campaign/CampaignDatum": {
+      "title": "CampaignDatum",
+      "anyOf": [
+        {
+          "title": "CampaignDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "owner",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "merkle_root",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "pool_amount",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "total_claimed",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "claims_count",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "status",
+              "$ref": "#/definitions/Int"
+            }
+          ]
+        }
+      ]
+    },
+    "campaign/CampaignRedeemer": {
+      "title": "CampaignRedeemer",
+      "anyOf": [
+        {
+          "title": "Claim",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/campaign~1ClaimRedeemer"
+            }
+          ]
+        },
+        {
+          "title": "Finalize",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        },
+        {
+          "title": "Cancel",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": []
+        },
+        {
+          "title": "Pause",
+          "dataType": "constructor",
+          "index": 3,
+          "fields": []
+        },
+        {
+          "title": "Resume",
+          "dataType": "constructor",
+          "index": 4,
+          "fields": []
+        }
+      ]
+    },
+    "campaign/ClaimRedeemer": {
+      "title": "ClaimRedeemer",
+      "anyOf": [
+        {
+          "title": "ClaimRedeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "participant_addr",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "claim_amount",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "merkle_proof",
+              "$ref": "#/definitions/List$ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
