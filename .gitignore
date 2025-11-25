@@ -12,10 +12,13 @@ coverage/
 # OS files
 .DS_Store
 Thumbs.db
-node_modules/
 
+# Dependencies and build outputs
 node_modules/
 dist/
 build/
 scripts/
+
+# Large data files
+whole-utxo.json
 
